@@ -197,7 +197,22 @@
 }
 
 .about-section {
+  display: flex;
+  align-items: center;
+}
+
+.about-text {
   padding-right: 40px;
+}
+
+.about .img-about {
+  min-width: 400px;
+}
+
+@media (max-width: 991px) {
+  .about .img-about {
+    min-width: 300px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -205,6 +220,9 @@
     padding: 0 10px;
   }
   .about-section {
+    flex-direction: column;
+  }
+  .about-text {
     padding: 0 0 50px;
   }
   .about h1 {
@@ -220,9 +238,6 @@
     font-size: 18px;
     line-height: 28px;
     font-weight: 400;
-  }
-  .about-section {
-    padding-right: 0;
   }
 }
 
