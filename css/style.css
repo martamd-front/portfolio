@@ -47,6 +47,31 @@ h1.generic-title {
   }
 }
 
+.navbar-custom {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.navbar-custom .nav-item {
+  padding: 0 15px;
+  color: #212529;
+  opacity: 1;
+}
+
+.navbar-custom .nav-item .active {
+  color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+  .navbar-custom {
+    margin: 10px 0 0;
+    padding-bottom: 20px;
+  }
+  .navbar-custom .nav-item {
+    padding: 0;
+  }
+}
+
 /* HOME */
 
 .home h1,
