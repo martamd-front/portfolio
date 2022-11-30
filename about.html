@@ -37,7 +37,7 @@
     ></script>
   </head>
   <body>
-    <nav class="navbar sticky-top navbar-expand-lg bg-light">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-custom">
       <div class="container">
         <a class="navbar-brand" href="/" title="Marta Muñoz home">
           <img src="images/logo.svg" class="logo" alt="Logo Marta"
@@ -54,7 +54,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 navbar-custom">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link" href="/" title="Home Portfolio">Home </a>
             </li>
@@ -75,19 +75,28 @@
         </div>
       </div>
     </nav>
+    <div class="bg-title">
+      <h1 class="generic-title"><span>{</span>About me<span>}</span></h1>
+      <h2 class="generic-subtitle">Let me introduce myself...</h2>
+    </div>
     <div class="container mt-5 mb-5">
       <div class="about">
         <div class="about-section">
           <div class="about-text">
-            <h1>Hi I am Marta Muñoz</h1>
-            <h2>Front-end Developer, based in Barcelona.</h2>
-            <p class="intro pb-4">
-              For anyone who wants to start learning code, this workshop is very
-              interesting. You will be challenged with different exercises, and
-              everything is well explained, homework and deadlines are good for
-              keep focus
+            <h3>Hi, I'm <span>{</span>Marta Muñoz<span>}</span></h3>
+            <h4>Front-end Developer, based in Barcelona</h4>
+            <p class="intro pb-4 pt-3">
+              I'm currently seeking new opportunities in front-end development.
+              I'm open to working on-site in Barcelona city. I also look forward
+              to hearing about remote opportunities. <br /><br />
+              I'm experienced in HTML, CSS, Bootstrap, JavaScript and API
+              integration. I plan to continue learning programming languages and
+              become full-stack developer.<br /><br />
+              I am looking forward to hear from you and to realize your project!
             </p>
-            <a href="#" class="btn btn-primary-custom">See my projects</a>
+            <a href="/work.html" class="btn btn-primary-custom"
+              >See my projects</a
+            >
           </div>
 
           <div class="img-about text-center">
@@ -141,5 +150,6 @@
         </div>
       </footer>
     </div>
+    <script src="/js/script.js"></script>
   </body>
 </html>
