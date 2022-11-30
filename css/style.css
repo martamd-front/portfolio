@@ -73,7 +73,6 @@ body {
   padding: 120px 20px 90px;
   background: var(--bg-color);
   margin-top: -70px;
-  background: var(--bg-color);
 }
 
 h1 span {
@@ -98,16 +97,31 @@ h2.generic-subtitle {
 }
 
 @media (max-width: 768px) {
-  h1.generic-title {
-    font-size: 34px;
-    line-height: 36px;
-    margin: 40px 0;
-  }
   .btn-primary-custom,
   .btn-secondary-custom {
     width: 100%;
     display: inline-block;
     text-align: center;
+    font-size: 16px;
+  }
+  .bg-title {
+    margin-top: -80px;
+  }
+
+  .bg-title {
+    padding: 80px 40px 40px;
+    background: var(--bg-color);
+    margin-top: -70px;
+  }
+  h1.generic-title {
+    font-size: 34px;
+    line-height: 28px;
+    margin: 30px 0 20px;
+  }
+  h2.generic-subtitle {
+    font-size: 25px;
+    line-height: 32px;
+    margin: 0;
   }
 }
 
@@ -138,11 +152,14 @@ h2.generic-subtitle {
 }
 @media (max-width: 768px) {
   .navbar-custom {
-    margin: 10px 0 0;
+    margin: 0;
     padding-bottom: 20px;
   }
   .navbar-custom .nav-item {
     padding: 0;
+  }
+  .navbar-custom {
+    background-color: rgba(255, 255, 255, 1);
   }
 }
 
@@ -237,7 +254,10 @@ h2.generic-subtitle {
   .home h2 {
     font-size: 40px;
   }
-
+  .home .latest-work h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
   .home h3 {
     font-size: 28px;
     opacity: 0.7;
@@ -248,6 +268,19 @@ h2.generic-subtitle {
   }
   .home .navigation-links a {
     margin: 0 10px;
+  }
+  .home .hero {
+    padding: 160px 20px 70px;
+    background: var(--bg-color);
+    margin-top: -80px;
+  }
+
+  .home .latest-work img {
+    max-width: 90%;
+    margin-bottom: 40px;
+  }
+  .home .latest-work img:nth-child(3n) {
+    margin-bottom: 0;
   }
 }
 
@@ -306,6 +339,7 @@ h2.generic-subtitle {
 @media (max-width: 768px) {
   .about {
     padding: 0 10px;
+    margin: 40px 0;
   }
   .about-section {
     flex-direction: column;
@@ -313,11 +347,12 @@ h2.generic-subtitle {
   .about-text {
     padding: 0 0 50px;
   }
-  .about h1 {
+  .about h3 {
     font-size: 40px;
+    line-height: 45px;
   }
 
-  .about h2 {
+  .about h4 {
     font-size: 25px;
     margin-bottom: 15px;
   }
@@ -364,7 +399,6 @@ h2.generic-subtitle {
 }
 
 .content-works p {
-  border-radius: 4px;
   font-size: 22px;
   line-height: 1.5;
   text-align: left;
@@ -388,18 +422,21 @@ h2.generic-subtitle {
 @media (max-width: 768px) {
   .content-works {
     flex-direction: column;
-    padding: 0 20px 20px;
+    padding: 35px 10px;
   }
-  .content-works h2 {
+  .content-works h3 {
     text-align: left;
     font-size: 30px;
-    margin-top: 60px;
+    margin-top: 0;
+  }
+  .content-works h4 {
+    font-size: 18px;
   }
   .content-works p {
-    background: white;
-    padding: 0;
-    text-align: left;
+    font-size: 18px;
+    line-height: 1.5;
   }
+
   .content-works .text {
     width: 100%;
     order: 1;
@@ -452,13 +489,31 @@ footer {
 }
 
 footer .contact-box {
-  background: var(--secondary-color);
-  padding: 40px 80px;
+  background: var(--bg-color);
+  padding: 40px 80px 65px;
   border-radius: 10px;
+  font-size: 24px;
 }
 
-footer .contact-box p {
-  margin: 0;
+footer .contact-box .email-icon {
+  font-size: 40px;
+}
+
+footer .contact-box .email-icon span {
+  color: var(--primary-color);
+  padding: 8px;
+}
+
+footer .contact-box h3 {
+  font-size: 38px;
+  opacity: 1;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+footer .contact-box a {
+  color: var(--primary-color);
+  text-decoration: none;
 }
 
 footer .email-link {
@@ -474,7 +529,7 @@ footer .email-link:hover {
 footer .social-links a {
   margin: 0 20px;
   color: var(--primary-color);
-  background: var(--secondary-color);
+  background: var(--bg-color);
   padding: 10px 14px;
   border-radius: 50%;
   font-size: 18px;
@@ -484,4 +539,15 @@ footer .social-links a {
 footer .social-links a:hover {
   color: white;
   background: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+  footer .contact-box {
+    font-size: 18px;
+    padding: 40px 30px 65px;
+  }
+
+  footer .contact-box h3 {
+    font-size: 30px;
+  }
 }
