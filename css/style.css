@@ -94,6 +94,9 @@ h1.generic-title {
   color: var(--primary-color);
 }
 
+.logo {
+  width: 220px;
+}
 @media (max-width: 768px) {
   .navbar-custom {
     margin: 10px 0 0;
@@ -101,6 +104,12 @@ h1.generic-title {
   }
   .navbar-custom .nav-item {
     padding: 0;
+  }
+}
+
+@media (max-width: 440px) {
+  .logo {
+    width: 190px;
   }
 }
 
