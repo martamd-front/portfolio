@@ -32,6 +32,21 @@
   color: white;
   opacity: 0.8;
 }
+h1.generic-title {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 60px;
+  margin: 60px 0;
+}
+@media (max-width: 768px) {
+  h1.generic-title {
+    font-size: 34px;
+    line-height: 36px;
+    margin: 40px 0;
+  }
+}
+
 /* HOME */
 
 .home h1,
@@ -242,13 +257,7 @@
 }
 
 /* WORK */
-.work h1 {
-  text-align: center;
-  font-size: 50px;
-  font-weight: 600;
-  line-height: 60px;
-  margin: 60px 0;
-}
+
 .work .grid-work {
   text-align: center;
 }
@@ -270,31 +279,40 @@
 }
 
 @media (max-width: 768px) {
-  .work h1 {
-    font-size: 34px;
-    line-height: 36px;
-    margin: 40px 0;
-  }
   .work .grid-work h3 {
     font-size: 24px;
   }
 }
 
 /* CONTACT */
-.email-link {
-  display: flex;
-  justify-content: center;
+
+.contact-methods {
+  list-style: none;
+  margin: -20px 0 0;
+  padding: 0;
+  text-align: center;
+  font-size: 18px;
+}
+.contact-methods li {
+  display: inline-block;
+  margin: 20px;
+}
+
+.contact-methods a {
   color: var(--primary-color);
-  font-size: 28px;
   text-decoration: none;
 }
 
-.email-link:hover {
+.contact-methods a:hover {
   text-decoration: underline;
 }
 
 @media (max-width: 768px) {
-  .contact h2 {
-    font-size: 34px;
+  .contact-methods {
+    margin-top: 20px;
+  }
+  .contact-methods li {
+    display: block;
+    margin: 10px 0;
   }
 }
