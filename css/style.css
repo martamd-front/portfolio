@@ -241,6 +241,45 @@
   }
 }
 
+/* WORK */
+.work h1 {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 60px;
+  margin: 60px 0;
+}
+.work .grid-work {
+  text-align: center;
+}
+
+.work .grid-work img {
+  max-width: 90%;
+}
+
+.work .grid-work h3 {
+  margin: 30px 0 5px;
+  font-weight: 700;
+  font-size: 28px;
+}
+
+.work .grid-work p {
+  opacity: 0.7;
+  margin-bottom: 50px;
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .work h1 {
+    font-size: 34px;
+    line-height: 36px;
+    margin: 40px 0;
+  }
+  .work .grid-work h3 {
+    font-size: 24px;
+  }
+}
+
 /* CONTACT */
 .email-link {
   display: flex;
