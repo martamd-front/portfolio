@@ -235,16 +235,23 @@ h2.generic-subtitle {
 
 .home .latest-work h2 {
   font-size: 35px;
-  margin-bottom: 30px;
 }
 
-.home .latest-work img {
-  max-width: 90%;
+.home .latest-work .grid-projects-img {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 50px;
+  margin: 40px 0 60px;
 }
 
 @media (max-width: 768px) {
   .container-sm {
     max-width: 90%;
+  }
+  .home .hero {
+    padding: 160px 20px 70px;
+    background: var(--bg-color);
+    margin-top: -80px;
   }
   .home h1 {
     font-size: 50px;
@@ -256,7 +263,6 @@ h2.generic-subtitle {
   }
   .home .latest-work h2 {
     font-size: 30px;
-    margin-bottom: 30px;
   }
   .home h3 {
     font-size: 28px;
@@ -269,18 +275,14 @@ h2.generic-subtitle {
   .home .navigation-links a {
     margin: 0 10px;
   }
-  .home .hero {
-    padding: 160px 20px 70px;
-    background: var(--bg-color);
-    margin-top: -80px;
-  }
 
-  .home .latest-work img {
-    max-width: 90%;
-    margin-bottom: 40px;
+  .home .latest-work {
+    padding: 20px 0 10px;
   }
-  .home .latest-work img:nth-child(3n) {
-    margin-bottom: 0;
+  .home .latest-work .grid-projects-img {
+    grid-template-columns: 1fr;
+    grid-gap: 40px;
+    margin: 25px 0 50px;
   }
 }
 
